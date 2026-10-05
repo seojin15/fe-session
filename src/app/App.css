@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #222;
+  font-family: sans-serif;
+}
+
+button,
+input,
+textarea {
+  border-radius: 8px;
+  font: inherit;
+}
+
+button {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+}
+
+.page-shell {
+  width: min(700px, calc(100% - 40px));
+  margin: 40px auto;
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+hr {
+  margin-top: 20px;
+  border: 0;
+  border-top: 1px solid #ddd;
+}
+
+.search-input,
+.post-form input,
+.post-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.search-input {
+  margin-bottom: 20px;
+}
+
+.post-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.post-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.post-title-button {
+  padding: 0;
+  border: 0;
+  color: #222;
+  font-weight: 700;
+  text-align: left;
+  background: none;
+}
+
+.post-meta {
+  margin: 6px 0 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.post-form {
+  display: grid;
+  gap: 16px;
+}
+
+.post-form label {
+  display: grid;
+  gap: 8px;
+}
+
+.post-form textarea {
+  min-height: 180px;
+  resize: vertical;
+}
+
+.button-group {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.post-detail {
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.post-content {
+  min-height: 160px;
+  margin-top: 32px;
+  white-space: pre-wrap;
+}
+
+.error-message {
+  color: #d00;
+}
